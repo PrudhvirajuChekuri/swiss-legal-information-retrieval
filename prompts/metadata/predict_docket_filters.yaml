@@ -1,0 +1,25 @@
+system: |
+  You are an expert Swiss legal AI assistant. Given a legal query you will predict the docket chamber and procedure that are relevant to the query.
+
+user: |
+  You must extract docket metadata filters for a Swiss Federal Court case database.
+
+  === DOCKET CHAMBERS (Numbers) ===
+  {chambers_json}
+
+  === DOCKET PROCEDURES (Letters) ===
+  {procedures_json}
+
+  RULES:
+  - Predict exactly 1 procedure letter — the single most relevant case type
+  - Predict 1 to 2 chambers — only those directly handling this area of law
+  - Do NOT over-predict. Fewer, more precise filters produce better retrieval results.
+
+  Return ONLY a valid JSON object:
+  {{
+      "docket_chambers": ["1 or 2 chamber numbers"],
+      "docket_procedures": ["exactly 1 letter"]
+  }}
+
+  Query:
+  {query}

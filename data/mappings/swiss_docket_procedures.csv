@@ -1,0 +1,19 @@
+procedure_letter,official_german,english,status
+A,Beschwerde in Zivilsachen,Civil Law Appeal,current
+B,Berufliche Vorsorge (EVG historisch) / Beschwerde in Strafsachen (modern),Occupational Pensions (historical EVG) / Criminal Appeal (modern),mixed
+C,Beschwerde in öffentlich-rechtlichen Angelegenheiten (BGer) / Krankenversicherung (EVG historisch),Public Law Appeal (BGer) / Health Insurance (historical EVG),current/historical
+D,Subsidiäre Verfassungsbeschwerde,Subsidiary Constitutional Complaint,current
+E,Beschwerde in Enteignungssachen (historisch) / Nichtigkeitsbeschwerde,Expropriation Appeal / Plea of nullity (historical),historical
+F,Revision und Erläuterung,Revision and Interpretation,current
+G,Kostenentscheide und Berichtigungen,Decisions on Costs and Rectifications,current
+P,Staatsrechtliche Beschwerde (historisch),Public Law Appeal (historical),historical
+S,"Nichtigkeitsbeschwerde im Strafrecht (historisch, Kassationshof)",Plea of nullity in Criminal Law (historical),historical
+I,Invalidenversicherung (EVG historisch),Invalidity Insurance (historical EVG),historical
+U,Unfallversicherung (EVG historisch),Accident Insurance (historical EVG),historical
+H,AHV/IV/EO (EVG historisch),Old-Age/Survivors/Disability Insurance (historical EVG),historical
+K,Krankenkassen (EVG historisch),Health Insurance Funds (historical EVG),historical
+M,Militärversicherung (EVG historisch),Military Insurance (historical EVG),historical
+T,Übergangs-/Sonderverfahren (historisch),Transitional/Special Proceedings (historical),historical
+X,Sonderverfahren (historisch),Special Proceedings (historical),historical
+Y,Sonderverfahren (historisch),Special Proceedings (historical),historical
+Z,Sonderverfahren (historisch),Special Proceedings (historical),historical

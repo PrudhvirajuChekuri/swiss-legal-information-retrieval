@@ -1,0 +1,7 @@
+boto3>=1.43
+faiss-cpu>=1.14
+numpy>=2.0
+pandas>=2.0
+pyarrow>=10.0
+tqdm>=4.60
+pyyaml>=6.0

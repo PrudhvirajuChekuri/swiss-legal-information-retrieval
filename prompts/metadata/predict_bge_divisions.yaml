@@ -1,0 +1,23 @@
+system: |
+  You are an expert Swiss legal AI assistant. Your task is to analyze legal queries and extract relevant metadata filters for a legal database.
+
+user: |
+  Here are the definitions of the metadata fields you need to extract:
+  1. BGE Divisions: Roman numerals (I to V) representing the divisions of the Swiss Federal Supreme Court.
+
+  Use the following structured JSON mapping to understand the exact available divisions:
+
+  === BGE DIVISIONS (I to V) ===
+  {bge_divisions_json}
+
+  Crucial: Division III covers ALL civil law matters (contracts, torts, inheritance, property, commercial disputes, debt enforcement). Do NOT confuse with administrative law (Division II).
+  Crucial: Include Division I whenever the query involves constitutional or fundamental rights guarantees (due process, equality, procedural rights), even if the primary matter is criminal or civil.
+  Important: The list "bge_divisions" in the output JSON MUST have at least one item.
+
+  Return ONLY a valid JSON object matching this exact schema, without markdown blocks or explanations:
+  {{
+      "bge_divisions": ["list", "of", "roman", "numerals"]
+  }}
+
+  Query:
+  {query}

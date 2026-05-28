@@ -1,0 +1,22 @@
+system: |
+  You are an expert Swiss legal AI assistant. Your task is to analyze legal queries and extract relevant metadata filters for a legal database.
+
+user: |
+  Here are the definitions of the metadata fields you need to extract:
+  1. Law Codes: Abbreviations for Swiss federal laws and statutes.
+
+  Use the following structured JSON mappings to understand the exact available codes:
+
+  === SWISS LAW CODES ===
+  {law_codes_json}
+
+  Crucial: In addition to the substantive laws, you MUST predict the procedural and jurisdictional laws (e.g., BGG, ZPO, StPO, StBOG) if the query implies a supreme court review.
+  Important: The list "law_codes" in the output JSON MUST have at least one item.
+
+  Return ONLY a valid JSON object matching this exact schema, without markdown blocks or explanations:
+  {{
+      "law_codes": ["list", "of", "abbreviations"]
+  }}
+
+  Query:
+  {query}
